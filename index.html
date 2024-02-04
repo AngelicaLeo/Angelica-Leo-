@@ -2,21 +2,115 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Titolo della Pagina</title>
+  <title>Zampe in vasca</title>
 </head>
   
 <body>
-  <div style="background-color:red;">
-    <a href="#chisiamo">Chi siamo</a>
-    <a href="#dovesiamo">Dove siamo</a>
-  </div>
+ 
 
-  
-  <h1 id="chisiamo">Chi siamo</h1>
-  <p>Testo del paragrafo</p>
+  <style>
+        body {
+            font-family: "Gill Sans"
+            margin: 10;
+            padding: 20;
+            background-color: #E0FFFF;
+        }
+      
 
-  <h1 id="dovesiamo">Dove siamo</h1>
-  <p>Testo del paragrafo</p>
+header {
+    background-color: #E0FFFF;
+    padding: 10px;
+    text-align: center;
+}
 
-</body>
+header img {
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E0FFFF;
+    padding: 10px;
+    box-shadow: 0 5px 5px (rgba(138, 203, 250, 0.8));
+}
+
+
+nav a {
+    color: #008080;
+    text-decoration: none;
+    padding: 10px 16px;
+    transition: color 0.3s ease;
+}
+nav a.prenota {
+            color: #fff;
+            background-color: #008080;
+            border-radius: 5px;
+        }
+
+nav a:hover {
+    color: #20B2AA;
+}
+
+nav a.appuntamenti {
+    color: #20B2AA;
+    background-color: #20B2AAca;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+
+<nav>
+<a href="#">Chi Siamo</a>
+<a href="#">Dove lavoriamo</a>
+<a href="#">Che servizi offriamo</a>
+<a href="#">Listino prezzi</a>
+<a href="#" class="prenota">Appuntamenti</a>
+</nav>
+
+<header>
+<h1>Zampe in vasca</h1>
+</header>
+<img src="https://i.ibb.co/QXT9rNQ/washing-pet-dog-home-23-2149627212.jpg" 
+     width="600" 
+     height="300" />
+
+<main>
+<h2></h2>
+<p>Negozio di toelettatura per animali domestici e non. I nostri servizi prevedono svariati trattamenti per garantire il perfetto benesere dell'animale.
+	Taglio A Forbici, Tosatura, Slanatura E Snodatura.
+	
+	TAGLIO A FORBICI e TOSATURA: il taglio a forbici rappresenta la fase più importante nella toelettatura e la maggior parte dei cani necessita del suo intervento. Può essere minimo per quanto riguarda la pulizia delle parti intime o le rifiniture dopo una tosatura, oppure rappresentare il taglio completo.
+	I tagli a forbice completi sono normalmente eseguiti su cani a pelo riccio o simili come Barboni, Bichon a Poil Frisè, Bolognesi,Lagotto Romagnolo ecc.
+	
+	SLANATURA: spazzolatura accurata che garantisce l’eliminazione del pelo morto.  Consigliato in periodo di muta e quando il tuo cane perde una gran quantità di peli per tutta la casa.
+	
+	SNODATURA: eliminazione dei nodi grazie all’utilizzo di speciali shampoo e condizionatori districanti. Il pelo torna nuovamente rigenerato ed si evitano i classici tagli drastici.
+</p>
+
+
+<img src="https://i.ibb.co/Fg2W7vJ/group-portrait-adorable-puppies-53876-64778.jpg" 
+     width="600" 
+     height="200" />
+
+<footer>
+	<section id="Informazioni utili">
+		<h2>Informazioni utili</h2>
+		<p>Recapiti telefonici:</p>
+		<div class="testo-come-funziona">
+		   <p>+39 34556789 
+			+ 39 03214568990</p></div>
+  <p>Proprietaria: Nicole Leoni </p>
+  <p><a href="mailto:info@zampeinvasca.com">info@zampeinvasca.com</a></p>
+
+</section>
+</footer>
 </html>
