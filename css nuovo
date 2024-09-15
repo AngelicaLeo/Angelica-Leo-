@@ -1,0 +1,244 @@
+body {
+    font-family:'Segoe UI';
+    line-height: 1.6;
+    background-image: url('immagini/Background_1.png');
+}
+
+header {
+    background:lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font: size 80px;
+    letter-spacing: 8px;
+    color:black;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font: size 20px;
+    letter-spacing: 2px;
+    color:lightcyan;
+    text-align: center;
+}
+
+header h3 {
+    line-height: 1.6;
+    margin: 0;
+    font: size 10px;
+    letter-spacing: 1px;
+    color:black;
+    text-align:justify;
+    font-weight: lighter;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+     border-radius: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: lightcyan;
+}
+
+.Immagine Circolare {
+    text-align: justify;
+    width: 10px;
+    height:10 px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px
+}
+
+
+.slideshow-container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+nav ul li {
+    margin: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: lightcyan;
+}
+
+
+section h2 {
+    margin-bottom: 2rem;
+    background:white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightcyan;
+}
+
+section h2 {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+/* Stili per il footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem ;
+}
+
+footer form {
+    display: flex;;
+    gap: 1rem;
+}
+
+footer form label {
+    text-align: left;
+}
+
+
+/* Stili responsivi */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    aside {
+        border-right: none;
+        border-bottom: 3px solid lightcyan;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color:black;
+    color: white;
+    font-family: 'Segoe UI';
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color:black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.circular-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circular-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circular-img p {
+    text-align: justify;
+}
+
+
+
+
