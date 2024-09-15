@@ -27,4 +27,6 @@ Chat Gpt\
 W3schools
 # Caratteristiche strutturali:
 Html5\
-Css
+CSS\
+JavaScript
+
