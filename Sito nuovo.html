@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0"
+    <title>Zampe in Vasca</title>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <h1>Zampe in Vasca </h1>
+        <h2> by Nicole Leoni</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#dove-lavoriamo">Dove Lavoriamo</a></li>
+            <li><a href="#servizi">Che Servizi Offriamo</a></li>
+            <li><a href="#listino-prezzi">Listino Prezzi</a></li>
+            <li><a href="#come-contattarci">Come Contattarci</a></li>
+        </ul>
+    </nav>
+  </head>
+
+    <body>
+  
+      <!--Immagini slider-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/dog1.jpg" alt="Immagine 1">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="immagini/dog2.jpg" alt="Immagine 2">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="immagini/selective-focus-shot-adorable-kooikerhondje-dog.jpg" alt="Immagine 3">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="immagini/french-bulldog-sitting-green-grass-outdoors.jpg" alt="Immagine 4">
+        </div> 
+
+        <!--tempi per le slide-->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+<!--presentazione-->
+</section>
+        <section id="chi-siamo">
+        <h2>Chi Siamo?</h2>
+            <div class="circle">
+                <img src="immagini/noemi.jpg" alt="Immagine Circolare">
+            </div>
+            <p align=centre> Ciao a tutti, mi presento sonon Nicole Leoni e sono la proprietaria del negozio di toelettatura chiamato Zampe in Vasca .Ho aperto questa attività nel 2019. Nel corso degli anni ho approfondito le mie conoscenze formandomi maggiormante su servizi come taglio a forbici, tosatura, slanatura e snodatura. Insieme a me vi presento anche il mio braccio destro, colei che mi aiuta con molta professionalità e un estremq bravura. </p>
+            <div></div>
+ </section>
+
+ <!--mappa-->
+</section>
+        <section id="dove-lavoriamo">
+        <h2>Dove Lavoriamo?</h2>
+            <p> <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+                <style>
+                    #map {
+                        height: 600px;
+                        width: 100%;
+                    }
+                </style>
+            <body>
+                <h1>Siamo qui : Novara - Viale Verdi</h1>
+                <div id="map"></div>
+            
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                <script>
+                    var map = L.map('map').setView([45.453657, 8.620008], 15);
+            
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+            
+                    L.marker([45.453657, 8.620008]).addTo(map)
+                        .bindPopup('Novara, Viale Verdi')
+                        .openPopup();
+                </script>
+            </body>
+</section>
+    
+<!--servizi-->
+
+</section>
+        <section id="servizi">
+            <h2>Che Servizi Offriamo</h2>
+            <p>   <div class="item">
+              <img src="immagini/tosatura-cani.jpg" alt="Descrizione Immagine 1" class="circular-img">
+              <div class="text-block">
+                  <h3>Tosatura</h3>
+                  <p>TOSATURA: Eliminazione del pelo grazie all'attrezzo di una tosatrice professionale. Ci sono razze per cui la tosatura è necessaria per mantenere il cane in salute, come ad esempio il barboncino, il maltese, il bichon frisé e il bolognese mentre con i cani provvisti di sottopelo la tosatura è sconsigliata ad esempio il golden retriever e il pastore tedesco</p>
+          </div>
+          <div class="item">
+              <img src="immagini/slanatura_.jpg" alt="Descrizione Immagine 2" class="circular-img">
+              <div class="text-block">
+                <h3>Slanatura</h3>
+                <p>SLANATURA: spazzolatura accurata che garantisce l’eliminazione del pelo morto. Consigliato in periodo di muta e quando il tuo cane perde una gran quantità di peli per tutta la casa.</p>
+              </div>
+          </div>
+          <div class="item">
+              <img src="immagini/snodatura.jpg" alt="Descrizione Immagine 3" class="circular-img">
+              <div class="text-block">
+                <h3>Snodatura</h3>
+                <p>SNODATURA: eliminazione dei nodi grazie all’utilizzo di speciali shampoo e condizionatori districanti. Il pelo torna nuovamente rigenerato ed si evitano i classici tagli drastici.</p>
+              </div>
+          </div>
+          <div class="item">
+              <img src="immagini/Taglio a forbice.jpg" alt="Descrizione Immagine 4" class="circular-img">
+              <div class="text-block">
+                  <h3>Taglio a forbici</h3>
+                              <p>TAGLIO A FORBICI: rappresenta la fase più importante nella toelettatura e la maggior parte dei cani necessita del suo intervento. Può essere minimo per quanto riguarda la pulizia delle parti intime o le rifiniture dopo una tosatura, oppure rappresentare il taglio completo.
+                                  I tagli a forbice completi sono normalmente eseguiti su cani a pelo riccio o simili come Barboni, Bichon a Poil Frisè, Bolognesi,Lagotto Romagnolo ecc..</p>
+              </div>
+          </div>
+</section>
+
+      <!--form-->
+</section>       
+        <section id="listino-prezzi">
+            <h2>Listino Prezzi</h2>
+            <div class="container">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">Nome e cognome del proprietario</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Nome dell'animale</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Trattamento da svolgere</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="country" name="country">
+                        <option value="australia">Taglio  forbici</option>
+                        <option value="canada">Snodatura</option>
+                        <option value="usa">Slanatura</option>
+                        <option value="usa">Tosatura</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Lasciate un messaggio per essere ricontattati</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Invio">
+                  </div>
+                </form>
+              </div>
+</section>
+
+<!--contatti-->
+
+ </section>
+        <section id="come-contattarci">
+            <h2>Come Contattarci</h2>
+    <nav class="contact-navbar">
+        <ul>
+            <li><a href="tel: + 39 34556789">Telefono </a></li>
+            <li><a href="mailto:info@zampeinvasca.com">Email</a></li>
+            <li><a href="Zampe in vasca">Facebook</a></li>
+            <li><a href="@Zampe in vasca">Twitter</a></li>
+            <li><a href="zampe in vasca by Nicole Leoni">Instagram</a></li>
+        </ul>
+    </nav>
+</footer></p>
+</section>
+        
+<img src="immagini/ritratto-di-gruppo-di-adorabili-cuccioli.jpg" alt="">
+
+        <!--ultima parte-->
+    <footer>
+        <p>&copy; 2024 Zampe in Vasca</p>
+    </footer>
+</body>
+</html>
